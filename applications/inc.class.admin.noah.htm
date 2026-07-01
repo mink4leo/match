@@ -1,0 +1,51 @@
+<?php
+
+class Admin{
+
+	var $status = array("Web Admin", "Administrator");
+	var $cookie = array();
+	var $rest = array();
+
+	function Admin(){
+		global $prefix, $db, $admin, $acookie, $config;
+		$this->cookie	= acookie($admin);
+		$this->rest	= $config['admin_restricted'];
+	}
+
+	function chk($type, $name, $oname = ""){
+		global $prefix, $db;
+		if($oname==$name){
+			return true;
+		}else{
+			$chk = $db->rows($db->query("select id from ".$prefix."_authors where ".$type."='".$name."'"));
+			if($chk > 0){
+				return false;
+			}else{
+				return true;
+			}
+		}
+	}
+
+	function alert($text){
+		header("Content-type: text/html; charset=utf-8");
+		?>
+		<script>
+		alert('<?php echo $text; ?>');
+		history.go(-1);
+		</script>
+		<?php
+	}
+
+	function allow($page){
+		if($this->cookie[4] == 0){
+			if(in_array($page, $this->rest)){
+				return false;
+			}else{
+				return true;
+			}
+		}else{
+			return true;
+		}
+	}
+
+}

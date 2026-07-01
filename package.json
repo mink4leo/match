@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ftp-simple": "^0.3.2"
+  }
+}

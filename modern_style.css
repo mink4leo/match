@@ -1,0 +1,1503 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/* Global Font Overrides */
+body, p, table, tr, td, th, h1, h2, h3, h4, h5, h6, input, select, textarea, button, a {
+    font-family: 'Prompt', 'Inter', sans-serif !important;
+}
+
+/* Page Layout and Wrappers */
+#main-content {
+    background-color: #f8fafc !important;
+    padding: 35px 0 !important;
+}
+
+.punica-shadow-box {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.02) !important;
+    border: 1px solid #e2e8f0 !important;
+    overflow: hidden !important;
+    padding: 30px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px !important;
+    align-items: flex-start !important;
+}
+
+.widget-area-2 {
+    flex: 1 !important;
+    float: none !important;
+    width: auto !important;
+    min-width: 0 !important;
+}
+
+.widget-area-3.sidebar {
+    width: 300px !important;
+    flex-shrink: 0 !important;
+    float: none !important;
+}
+
+.breadcrumb {
+    background: #f1f5f9 !important;
+    border-radius: 12px !important;
+    padding: 14px 22px !important;
+    border: 1px solid #e2e8f0 !important;
+    margin-bottom: 30px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #64748b !important;
+}
+
+.breadcrumb a {
+    color: #2563eb !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.breadcrumb a:hover {
+    color: #1d4ed8 !important;
+}
+
+/* Page Header & postponed message */
+.entry-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+}
+
+.chA2 {
+    background-color: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    color: #991b1b !important;
+    border-radius: 14px !important;
+    padding: 24px !important;
+    margin: 25px 0 !important;
+    text-align: center !important;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.04) !important;
+}
+
+.chA2 h2 {
+    color: #991b1b !important;
+    margin: 0 0 6px 0 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.chA2 p {
+    color: #b91c1c !important;
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Call to Action Buttons */
+.punica-button.big-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 28px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border-radius: 12px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    margin: 8px !important;
+    text-shadow: none !important;
+    border: none !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+/* REGISTER ONLINE Button (Blue) */
+.punica-button.button {
+    background: linear-gradient(135deg, #2563eb, #3b82f6, #1d4ed8) !important;
+    color: #ffffff !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 700 !important;
+    border-radius: 10px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    animation: button-float 3s infinite ease-in-out, buttonPulse 2.5s infinite alternate !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px auto !important;
+}
+
+.punica-button.button::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -150% !important;
+    width: 50% !important;
+    height: 100% !important;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: skewX(-25deg) !important;
+    animation: shine-sweep 3.5s infinite ease-in-out !important;
+    z-index: 2 !important;
+}
+
+/* NEW Version Button (Purple) */
+.punica-button.button-new {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6, #6d28d9) !important;
+    color: #ffffff !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    min-width: 0 !important;
+    padding: 16px 24px !important;
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 700 !important;
+    border-radius: 14px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    animation: button-float 3s infinite ease-in-out, buttonPulseNew 2.5s infinite alternate !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px auto !important;
+}
+
+.punica-button.button-new::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -150% !important;
+    width: 50% !important;
+    height: 100% !important;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: skewX(-25deg) !important;
+    animation: shine-sweep 3.5s infinite ease-in-out !important;
+    z-index: 2 !important;
+}
+
+/* HAPKIDO REGISTER Button (Pink/Magenta) */
+.punica-button.buttonHup {
+    background: linear-gradient(135deg, #ec4899, #f472b6, #d946ef) !important;
+    color: #ffffff !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    min-width: 0 !important;
+    padding: 12px 20px !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+    box-shadow: 0 8px 20px rgba(236, 72, 153, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    animation: button-float 3s infinite ease-in-out, buttonPulseHup 2.5s infinite alternate !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px auto !important;
+}
+
+.punica-button.buttonHup::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -150% !important;
+    width: 50% !important;
+    height: 100% !important;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: skewX(-25deg) !important;
+    animation: shine-sweep 3.5s infinite ease-in-out !important;
+    z-index: 2 !important;
+}
+
+/* Hover effects */
+.punica-button.button:hover,
+.punica-button.buttonHup:hover,
+.punica-button.button-new:hover {
+    transform: translateY(-5px) scale(1.02) !important;
+    color: #ffffff !important;
+}
+
+.punica-button.button:hover {
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+.punica-button.button-new:hover {
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+.punica-button.buttonHup:hover {
+    box-shadow: 0 15px 35px rgba(236, 72, 153, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.punica-button.button:hover::before,
+.punica-button.button-new:hover::before,
+.punica-button.buttonHup:hover::before {
+    animation: shine-sweep 1.2s infinite ease-in-out !important;
+}
+
+.punica-button.button:hover i,
+.punica-button.button-new:hover i,
+.punica-button.buttonHup:hover i {
+    animation: iconBounce 0.6s infinite alternate !important;
+}
+
+/* Pulse animations */
+@keyframes buttonPulseNew {
+    0% {
+        box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35), 0 0 0 0 rgba(124, 58, 237, 0.2) !important;
+    }
+    100% {
+        box-shadow: 0 10px 28px rgba(124, 58, 237, 0.6), 0 0 0 10px rgba(124, 58, 237, 0) !important;
+    }
+}
+
+/* Tablet/Desktop overrides (side-by-side display) */
+@media (min-width: 640px) {
+    .punica-button.button {
+        width: 35% !important;
+        max-width: 200px !important;
+        min-width: 150px !important;
+        display: inline-flex !important;
+        padding: 12px 28px !important;
+        font-size: 14px !important;
+        margin: 8px !important;
+    }
+    .punica-button.button-new {
+        width: 50% !important;
+        max-width: 320px !important;
+        min-width: 240px !important;
+        display: inline-flex !important;
+        padding: 18px 40px !important;
+        font-size: 18px !important;
+        margin: 8px !important;
+    }
+    .punica-button.buttonHup {
+        width: 90% !important;
+        max-width: 540px !important;
+        min-width: 280px !important;
+        display: inline-flex !important;
+        padding: 18px 40px !important;
+        font-size: 18px !important;
+        margin: 8px !important;
+    }
+}
+
+@keyframes shine-sweep {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@keyframes button-float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.01);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes iconBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes buttonPulse {
+    0% {
+        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35), 0 0 0 0 rgba(37, 99, 235, 0.2) !important;
+    }
+    100% {
+        box-shadow: 0 10px 28px rgba(37, 99, 235, 0.6), 0 0 0 10px rgba(37, 99, 235, 0) !important;
+    }
+}
+
+@keyframes buttonPulseHup {
+    0% {
+        box-shadow: 0 6px 16px rgba(236, 72, 153, 0.35), 0 0 0 0 rgba(236, 72, 153, 0.2) !important;
+    }
+    100% {
+        box-shadow: 0 10px 28px rgba(236, 72, 153, 0.6), 0 0 0 10px rgba(236, 72, 153, 0) !important;
+    }
+}
+
+/* Countdown Clock Display */
+#demo {
+    display: inline-flex !important;
+    margin-top: 10px !important;
+    align-items: center !important;
+}
+
+.countdown-box {
+    display: inline-flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+    background: #eff6ff !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    border: 1px solid #bfdbfe !important;
+}
+
+.countdown-box div {
+    display: inline-flex !important;
+    align-items: baseline !important;
+    gap: 3px !important;
+    color: #1d4ed8 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+.countdown-box small {
+    font-size: 11px !important;
+    color: #64748b !important;
+    font-weight: 500 !important;
+}
+
+#demo span {
+    color: #dc2626 !important;
+    font-weight: 700 !important;
+    background: #fee2e2 !important;
+    padding: 6px 16px !important;
+    border-radius: 8px !important;
+    border: 1px solid #fca5a5 !important;
+}
+
+/* Modern Dashboard Grid (showCard) */
+.showCard {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)) !important;
+    gap: 8px !important;
+    margin: 15px 0 !important;
+    justify-content: center !important;
+}
+
+/* Base Card Style inspired by user image: rounded, clean border, soft shadow */
+.showCard > div {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: 75px !important;
+    border-radius: 14px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.03) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-sizing: border-box !important;
+    padding: 8px 6px !important;
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 1 !important;
+    
+    /* Default theme variables */
+    --theme-color: #3b82f6 !important;
+    --theme-color-rgb: 59, 130, 246 !important;
+    --bg-tint: #eff6ff !important;
+}
+
+/* Card Hover: Subtle translate lift and soft color-matched glow shadow */
+.showCard > div:hover {
+    transform: translateY(-3px) !important;
+    border-color: var(--theme-color) !important;
+    box-shadow: 0 8px 24px rgba(var(--theme-color-rgb), 0.12) !important;
+}
+
+/* Circular Badge Base style for numbers/icons at the top */
+.showCard > div button.btnA,
+.showCard > div a::before {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+    background: var(--bg-tint) !important;
+    color: var(--theme-color) !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    margin: 0 auto 3px auto !important;
+    box-shadow: inset 0 0 0 1px rgba(var(--theme-color-rgb), 0.08) !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Default boxA (Category Cards) style */
+.showCard > div.boxA {
+    padding: 6px 4px !important;
+    justify-content: center !important;
+}
+
+.showCard > div.boxA span {
+    order: 2 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-top: 2px !important;
+    line-height: 1.2 !important;
+    display: block !important;
+    text-align: center !important;
+    z-index: 3 !important;
+    position: relative !important;
+    pointer-events: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.showCard > div.boxA button.btnA {
+    order: 1 !important;
+    position: static !important;
+    width: 34px !important;
+    height: 34px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    z-index: 2 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+    font-size: 18px !important;
+}
+
+.showCard > div.boxA:hover span {
+    color: var(--theme-color) !important;
+}
+
+/* boxA Color overrides based on inline style on button in views.php */
+
+/* POOMSAE Cyan card (#09c3fb) */
+.showCard > div.boxA:has(button[style*="09c3fb"]),
+.showCard > div.boxA:has(button[style*="#09c3fb"]) {
+    --theme-color: #06b6d4 !important;
+    --theme-color-rgb: 6, 182, 212 !important;
+    --bg-tint: #ecfeff !important;
+}
+
+/* SPEED Purple card (#dc59fc) & KYUKPA */
+.showCard > div.boxA:has(button[style*="dc59fc"]),
+.showCard > div.boxA:has(button[style*="#dc59fc"]) {
+    --theme-color: #d946ef !important;
+    --theme-color-rgb: 217, 70, 239 !important;
+    --bg-tint: #fdf4ff !important;
+}
+
+/* HOSHINSUL / F HAND / F WEAP Red card (#ff1a1a) */
+.showCard > div.boxA:has(button[style*="ff1a1a"]),
+.showCard > div.boxA:has(button[style*="#ff1a1a"]) {
+    --theme-color: #ef4444 !important;
+    --theme-color-rgb: 239, 68, 68 !important;
+    --bg-tint: #fee2e2 !important;
+}
+
+/* VR indigo card (#6964f2) */
+.showCard > div.boxA:has(button[style*="6964f2"]),
+.showCard > div.boxA:has(button[style*="#6964f2"]) {
+    --theme-color: #6366f1 !important;
+    --theme-color-rgb: 99, 102, 241 !important;
+    --bg-tint: #e0e7ff !important;
+}
+
+/* K-TEAM lime card (#89e543) */
+.showCard > div.boxA:has(button[style*="89e543"]),
+.showCard > div.boxA:has(button[style*="#89e543"]) {
+    --theme-color: #16a34a !important;
+    --theme-color-rgb: 22, 163, 74 !important;
+    --bg-tint: #f0fdf4 !important;
+}
+
+/* TOTAL card (.wid100) - Premium Violet Gradient */
+.showCard > div.wid100 {
+    grid-column: span 2 !important;
+    height: 75px !important;
+    background: linear-gradient(135deg, #7c3aed, #5b21b6) !important;
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.15) !important;
+    --theme-color: #ffffff !important;
+    --theme-color-rgb: 255, 255, 255 !important;
+}
+
+.showCard > div.wid100 span {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    opacity: 0.95 !important;
+}
+
+.showCard > div.wid100 button.btnA {
+    background: #ffffff !important;
+    color: #5b21b6 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+    border: none !important;
+}
+
+/* Hover state for Total Card */
+.showCard > div.wid100:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 28px rgba(124, 58, 237, 0.35) !important;
+}
+
+.showCard > div.wid100:hover button.btnA {
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Custom styling for BoxAA2 (Actions / Rank widgets) */
+.showCard > div.boxAA2 {
+    --theme-color: #3b82f6 !important;
+    --theme-color-rgb: 59, 130, 246 !important;
+    --bg-tint: #eff6ff !important;
+    padding: 8px 6px !important;
+}
+
+.showCard .boxAA2 a {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+    text-decoration: none !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 3 !important;
+    position: relative !important;
+}
+
+.showCard .boxAA2 span {
+    order: 2 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+    margin-top: 1px !important;
+    line-height: 1.1 !important;
+    display: block !important;
+    text-align: center !important;
+}
+
+.showCard > div.boxAA2 button.btnA2 {
+    order: 3 !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+    color: #0f172a !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.showCard > div.boxAA2:hover button.btnA2 {
+    color: var(--theme-color) !important;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.showCard > div.boxAA2:hover span {
+    color: var(--theme-color) !important;
+}
+
+/* boxAA2 Color overrides based on href destination */
+
+/* BEST PLAYER - Indigo theme */
+.showCard > div.boxAA2:has(a[href*="finaltotal-A"]) {
+    --theme-color: #8b5cf6 !important;
+    --theme-color-rgb: 139, 92, 246 !important;
+    --bg-tint: #f5f3ff !important;
+}
+
+/* คู่พิเศษ (Special) - Rose theme */
+.showCard > div.boxAA2:has(a[href*="special"]) {
+    --theme-color: #f43f5e !important;
+    --theme-color-rgb: 244, 63, 94 !important;
+    --bg-tint: #fff1f2 !important;
+}
+
+/* คะแนนรวม Kyorugi - Blue theme */
+.showCard > div.boxAA2:has(a[href*="ground.php"]) {
+    --theme-color: #3b82f6 !important;
+    --theme-color-rgb: 59, 130, 246 !important;
+    --bg-tint: #eff6ff !important;
+}
+
+/* คะแนนรวม Poomsae - Cyan theme */
+.showCard > div.boxAA2:has(a[href*="ground_ps"]) {
+    --theme-color: #06b6d4 !important;
+    --theme-color-rgb: 6, 182, 212 !important;
+    --bg-tint: #ecfeff !important;
+}
+
+/* คะแนนรวม Speed - Magenta theme */
+.showCard > div.boxAA2:has(a[href*="team_speed_all"]) {
+    --theme-color: #d946ef !important;
+    --theme-color-rgb: 217, 70, 239 !important;
+    --bg-tint: #fdf4ff !important;
+}
+
+/* ไม่ได้รับเหรียญ (No Medal) - Amber theme */
+.showCard > div.boxAA2:has(a[href*="medal_show"]) {
+    --theme-color: #f59e0b !important;
+    --theme-color-rgb: 245, 158, 11 !important;
+    --bg-tint: #fffbeb !important;
+}
+
+/* คู่สาย Speed PDF - Magenta theme */
+.showCard > div.boxAA2:has(a[href*="speed.pdf"]) {
+    --theme-color: #dc59fc !important;
+    --theme-color-rgb: 217, 70, 239 !important;
+    --bg-tint: #fdf4ff !important;
+}
+
+/* คู่สาย Poomsae PDF - Cyan theme */
+.showCard > div.boxAA2:has(a[href*="poomsae.pdf"]) {
+    --theme-color: #09c3fb !important;
+    --theme-color-rgb: 9, 195, 251 !important;
+    --bg-tint: #ecfeff !important;
+}
+
+/* คู่สาย K-TEAM PDF - Pink/Magenta theme */
+.showCard > div.boxAA2:has(a[href*="kteam.pdf"]) {
+    --theme-color: #db2777 !important;
+    --theme-color-rgb: 219, 39, 119 !important;
+    --bg-tint: #fdf2f8 !important;
+}
+
+/* Action Icon Mappings for boxAA2 using FontAwesome in a::before */
+.showCard > div.boxAA2 a::before {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+}
+.showCard > div.boxAA2:has(a[href*="finaltotal-A"]) a::before { content: "\f005" !important; } /* Star */
+.showCard > div.boxAA2:has(a[href*="special"]) a::before { content: "\f0c0" !important; } /* Users */
+.showCard > div.boxAA2:has(a[href*="ground.php"]) a::before { content: "\f091" !important; } /* Trophy */
+.showCard > div.boxAA2:has(a[href*="ground_ps"]) a::before { content: "\f091" !important; } /* Trophy */
+.showCard > div.boxAA2:has(a[href*="ground_sp"]) a::before { content: "\f091" !important; } /* Trophy */
+.showCard > div.boxAA2:has(a[href*="medal_show"]) a::before { content: "\f0a3" !important; } /* Medal/Ribbon */
+.showCard > div.boxAA2:has(a[href*="speed.pdf"]) a::before { content: "\f1c1" !important; } /* PDF File */
+.showCard > div.boxAA2:has(a[href*="poomsae.pdf"]) a::before { content: "\f1c1" !important; } /* PDF File */
+.showCard > div.boxAA2:has(a[href*="kteam.pdf"]) a::before { content: "\f1c1" !important; } /* PDF File */
+
+
+/* Custom styling for BoxAA4 (Court Download widgets) - green theme */
+.showCard > div.boxAA4 {
+    --theme-color: #059669 !important;
+    --theme-color-rgb: 5, 150, 105 !important;
+    --bg-tint: #ecfdf5 !important;
+    padding: 8px 6px !important;
+}
+
+.showCard .boxAA4 a {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    width: 100% !important;
+    text-decoration: none !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.showCard .boxAA4 a::before {
+    content: "\f1c1" !important; /* PDF icon */
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+}
+
+.showCard > div.boxAA4:hover a {
+    color: var(--theme-color) !important;
+}
+
+.showCard > div.boxAA4 button.btnB {
+    background: transparent !important;
+    border: none !important;
+    color: #0f172a !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin: 1px 0 0 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.showCard > div.boxAA4:hover button.btnB {
+    color: var(--theme-color) !important;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+
+/* LIVE! Court Widget (boxAA3) - Premium Red Gradient */
+.showCard > div.boxAA3 {
+    padding: 8px 6px !important;
+    height: 75px !important;
+    background: linear-gradient(135deg, #ef4444, #b91c1c) !important;
+    border: none !important;
+    box-shadow: 0 6px 16px rgba(239, 68, 68, 0.15) !important;
+    --theme-color: #ffffff !important;
+    --theme-color-rgb: 255, 255, 255 !important;
+}
+
+.showCard .boxAA3 a {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+    text-decoration: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.showCard .boxAA3 a br {
+    display: none !important; /* Unify into a single line */
+}
+
+/* Circular video camera badge - solid white with red icon */
+.showCard .boxAA3 a::before {
+    content: "\f03d" !important; /* Video camera */
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900 !important;
+    background: #ffffff !important;
+    color: #dc2626 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Pulsing white dot placed top-right of the camera icon circle */
+.showCard .boxAA3 a::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 1px !important;
+    right: 25px !important;
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #ffffff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 6px #ffffff !important;
+    animation: live-indicator-pulse 1s infinite alternate !important;
+    z-index: 4 !important;
+}
+
+/* Hover state for Live Court Card */
+.showCard > div.boxAA3:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 28px rgba(239, 68, 68, 0.35) !important;
+}
+
+.showCard > div.boxAA3:hover a::before {
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+@keyframes live-indicator-pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.6;
+        box-shadow: 0 0 2px rgba(239, 68, 68, 0.5);
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(239, 68, 68, 1);
+    }
+}
+
+/* Secondary Button items (boxAA2 and boxAA4 default modifiers overrides) */
+.btnA2 {
+    background-color: transparent !important;
+}
+
+.btnB {
+    background-color: transparent !important;
+}
+
+/* Elegant styled Tables (Details Grid) */
+.table.table-striped {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    margin: 25px 0 !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01) !important;
+}
+
+.table.table-striped td {
+    padding: 6px 12px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    color: #334155 !important;
+    font-size: 15px !important;
+    vertical-align: middle !important;
+}
+
+.table.table-striped tr:last-child td {
+    border-bottom: none !important;
+}
+
+.table.table-striped tr:nth-of-type(odd) {
+    background-color: #f8fafc !important;
+}
+
+.table.table-striped td:first-child {
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    width: 32% !important;
+    border-right: 1px solid #f1f5f9;
+}
+
+/* Edit Match Form styling on page views.php */
+form[action^="views.php"] table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #fecaca !important;
+    background-color: #fef2f2 !important;
+    margin: 0 !important;
+}
+
+form[action^="views.php"] td {
+    padding: 10px 15px !important;
+    border: none !important;
+    font-size: 14px !important;
+    vertical-align: middle !important;
+}
+
+form[action^="views.php"] input[type="password"] {
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    border: 1px solid #fca5a5 !important;
+    outline: none !important;
+    transition: all 0.2s ease !important;
+}
+
+form[action^="views.php"] input[type="password"]:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+form[action^="views.php"] input[type="submit"] {
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 7px 18px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+}
+
+form[action^="views.php"] input[type="submit"]:hover {
+    background: #dc2626 !important;
+}
+
+/* Edit button link */
+.punica-button.red-button.medium-button {
+    background: #475569 !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    transition: all 0.2s ease !important;
+}
+
+.punica-button.red-button.medium-button:hover {
+    background: #334155 !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Navigation Tabs & Contents */
+.nav-tabs {
+    border-bottom: 2px solid #e2e8f0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    margin-bottom: 30px !important;
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.nav-tabs > li {
+    float: none !important;
+    display: inline-block !important;
+}
+
+.nav-tabs > li > a {
+    border: none !important;
+    color: #64748b !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 12px 22px !important;
+    border-radius: 10px 10px 0 0 !important;
+    transition: all 0.2s ease !important;
+    background: transparent !important;
+    position: relative !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+.nav-tabs > li > a:hover {
+    color: #2563eb !important;
+    background: #f1f5f9 !important;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+    border: none !important;
+    color: #2563eb !important;
+    background: transparent !important;
+}
+
+.nav-tabs > li.active > a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background-color: #2563eb !important;
+    border-radius: 3px 3px 0 0 !important;
+}
+
+.tab-content {
+    padding: 28px !important;
+    background: #f8fafc !important;
+    border-radius: 16px !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    line-height: 1.7 !important;
+    font-size: 15px !important;
+}
+
+.tab-content h3 {
+    margin-top: 0 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 15px !important;
+}
+
+/* Sidebar Styling */
+.widget-area-3.sidebar {
+    padding-left: 15px !important;
+}
+
+.widget.punica-nothumb-widget {
+    background: #ffffff !important;
+    border-radius: 18px !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 24px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02) !important;
+}
+
+.widget-title {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    border-bottom: 2px solid #f1f5f9 !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 18px !important;
+    text-transform: uppercase !important;
+}
+
+.widget-title span {
+    display: block !important;
+    font-size: 11px !important;
+    color: #64748b !important;
+    font-weight: 500 !important;
+    margin-top: 4px !important;
+    text-transform: none !important;
+}
+
+.widget ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.widget li.top-item {
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 14px 0 !important;
+}
+
+.widget li.top-item:last-child {
+    border-bottom: none !important;
+}
+
+.entry-number {
+    width: 34px !important;
+    height: 34px !important;
+    background: #eff6ff !important;
+    color: #2563eb !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    margin-right: 14px !important;
+    transition: all 0.2s ease !important;
+}
+
+.top-item:hover .entry-number {
+    background: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.widget .entry-title {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin: 0 0 2px 0 !important;
+    line-height: 1.4 !important;
+}
+
+.widget .entry-title a {
+    color: #334155 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.widget .entry-title a:hover {
+    color: #2563eb !important;
+}
+
+.load-more {
+    display: block !important;
+    text-align: center !important;
+    padding: 12px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+    margin-top: 20px !important;
+    transition: all 0.2s ease !important;
+}
+
+.load-more:hover {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+    border-color: #bfdbfe !important;
+}
+
+/* ==========================================================================
+   Modernized Form CSS System (for addnew.php and view-edit.php)
+   ========================================================================== */
+.form-container {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 35px !important;
+    max-width: 900px !important;
+    margin: 30px auto !important;
+}
+
+.form-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+    border-bottom: 2px solid #f1f5f9 !important;
+    padding-bottom: 15px !important;
+}
+
+/* Modern inputs, select lists, textareas */
+input[type="text"], 
+input[type="password"], 
+select, 
+textarea {
+    width: 100% !important;
+    padding: 10px 16px !important;
+    font-size: 15px !important;
+    color: #334155 !important;
+    background-color: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+select:focus, 
+textarea:focus {
+    background-color: #ffffff !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1) !important;
+}
+
+/* Form Tables */
+.form-container table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+}
+
+.form-container td {
+    padding: 12px 10px !important;
+    vertical-align: middle !important;
+    border: none !important;
+    color: #334155 !important;
+    font-size: 14px !important;
+}
+
+.form-container td[align="right"] {
+    font-weight: 600 !important;
+    color: #475569 !important;
+    text-align: right !important;
+    padding-right: 20px !important;
+}
+
+/* Form alerts & notifications */
+.alert-box, 
+tr[bgcolor="#FF0000"] td {
+    background-color: #fee2e2 !important;
+    border: 1px solid #fecaca !important;
+    color: #991b1b !important;
+    border-radius: 12px !important;
+    padding: 18px !important;
+    margin-bottom: 25px !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.02) !important;
+}
+
+.alert-box strong,
+tr[bgcolor="#FF0000"] td strong {
+    color: #7f1d1d !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.alert-box font,
+tr[bgcolor="#FF0000"] td font {
+    color: #991b1b !important;
+    font-size: 14px !important;
+}
+
+tr[bgcolor="#D8D8D8"] td {
+    background-color: #f1f5f9 !important;
+    border-radius: 10px !important;
+    padding: 14px !important;
+    text-align: center !important;
+}
+
+tr[bgcolor="#D8D8D8"] td font b {
+    color: #0f172a !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+/* Submit Buttons in Form */
+input[type="submit"][name^="submit"],
+input[type="submit"] {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18) !important;
+    margin-top: 15px !important;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.28) !important;
+    filter: brightness(1.05) !important;
+}
+
+/* File input custom style reset */
+input[type="file"] {
+    background: #f8fafc !important;
+    border: 1px dashed #cbd5e1 !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+}
+
+input[type="file"]:hover {
+    border-color: #2563eb !important;
+    background: #eff6ff !important;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .widget-area-1 {
+        padding: 0 12px !important;
+        box-sizing: border-box !important;
+    }
+    .punica-shadow-box {
+        padding: 22px !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    .widget-area-2, .widget-area-3.sidebar {
+        width: 100% !important;
+        float: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .widget-area-3.sidebar {
+        margin-top: 30px !important;
+    }
+    .showCard {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)) !important;
+    }
+    .showCard .wid100 {
+        grid-column: 1 / -1 !important;
+    }
+    .table.table-striped td:first-child {
+        width: 40% !important;
+    }
+    .nav-tabs {
+        flex-wrap: wrap !important;
+    }
+    .nav-tabs > li > a {
+        padding: 8px 14px !important;
+        font-size: 13px !important;
+    }
+    .form-container {
+        padding: 20px !important;
+    }
+    .form-container td[align="right"] {
+        text-align: left !important;
+        padding-bottom: 4px !important;
+        display: block !important;
+    }
+    .form-container td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Helper styles moved from inline views.php styles */
+iframe {
+    width: 100% !important;
+    height: 500px !important;
+    border: none !important;
+    border-radius: 12px !important;
+}
+
+#menu2 img, #home img {
+    width: 100% !important;
+    border-radius: 12px !important;
+}
+
+.headspan {
+    background-color: #d65cff !important;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        height: 300px !important;
+    }
+}
+
+.style1 {
+    font-weight: bold !important;
+}
+
+.style2 {
+    color: inherit !important;
+}
+
+/* Mobile Width and Header Menu Alignments */
+@media only screen and (max-width: 768px) {
+    /* 1. Expand the left and right width of the webpage */
+    .wrapper,
+    .wrapper-inner {
+        width: 95% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. Style the top header bar to align logo and menu button on the same line */
+    #punica-page-header {
+        position: relative !important;
+        z-index: 10000 !important;
+    }
+
+    .punica-header-top {
+        margin-bottom: 0 !important;
+        position: relative !important;
+        height: 60px !important;
+        background-color: #D60919 !important; /* Ensure red background */
+    }
+
+    .punica-header-top .wrapper-inner {
+        height: 60px !important;
+        position: relative !important;
+        display: block !important;
+    }
+
+    .punica-header-top #logo-image {
+        position: absolute !important;
+        top: 50% !important;
+        left: 0 !important;
+        transform: translateY(-50%) !important;
+        padding: 0 !important;
+        width: auto !important;
+        max-width: 160px !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+
+    .punica-header-top #logo-image img {
+        max-height: 40px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    /* Hide contact info on top header for clean look */
+    .punica-header-top #top-contact-info {
+        display: none !important;
+    }
+
+    /* Pull header middle container up to be on the same row as header top */
+    .punica-header-middle {
+        margin: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        width: auto !important;
+        background: none !important;
+        border: none !important;
+        z-index: 1001 !important;
+    }
+
+    .punica-header-middle .wrapper-inner {
+        background: none !important;
+        width: auto !important;
+    }
+
+    #main-nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        float: right !important;
+        display: inline-block !important;
+    }
+
+    /* Style the hamburger menu icon */
+    #main-nav i.fa-align-justify {
+        color: #ffffff !important;
+        font-size: 24px !important;
+        padding: 18px 10px !important;
+        cursor: pointer !important;
+        display: block !important;
+        line-height: 1 !important;
+    }
+
+    /* Style the shopping cart icon if present */
+    .punica-header-middle .punica-shopping-cart {
+        color: #ffffff !important;
+        padding: 18px 10px !important;
+        font-size: 20px !important;
+        background: none !important;
+        margin: 0 !important;
+        display: inline-block !important;
+    }
+
+    /* Make the mobile dropdown menu take 100% width and align perfectly below the top bar */
+    .mobile-menu-wrapper {
+        position: fixed !important;
+        top: 60px !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 99999 !important;
+    }
+
+    #mobile-menu {
+        width: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+        box-sizing: border-box !important;
+    }
+}

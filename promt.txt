@@ -1,0 +1,12 @@
+
+
+
+ปุ่ม 'REGISTER ONLINE' ทำให้กว้างกว่านี้ และ เพิ่ม css animation ขยับได้ และใส่ icon หน้าข้อความด้วย
+
+
+เปลี่ยน design class boxA boxAA2 boxAA3 boxAA4 ใหม่ ให้ทันสมัย และ เล็กลงอีก
+
+
+แก้ไข code php ให้ โหลดเร็วขึ้น ตัดส่วนที่ไม่จำเป็นออก
+
+LIVE! Court
